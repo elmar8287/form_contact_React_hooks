@@ -27,4 +27,4 @@ Feel free to check the [issues page](https://github.com/elmar8287/form_contact_R
 
 Give a ⭐️ if you like this project!
 
-License could be find [here](https://github.com/elmar8287/form_contact_React_hooks/blob/dev/LICENSE)
+License could be find [here](https://github.com/elmar8287/form_contact_React_hooks/blob/setup/LICENSE)
