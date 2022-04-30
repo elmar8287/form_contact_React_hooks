@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './Form.css';
 
 function Form() {
+  const [submited, setSubmited] = useState(false)
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -13,9 +14,14 @@ function Form() {
     e.preventDefault();
     setFormData(e.target.value)
   }
+
+  const isSubmited = (e) => {
+    e.preventDefault()
+    setSubmited(true)
+  }
   return (
     <div className="main">
-      <form className="form">
+      <form className="form" onSubmit={isSubmited}>
         <input
           type="text"
           value={formData.firstName}
@@ -49,7 +55,9 @@ function Form() {
         />
         <button type="submit" className="form-btn">Send</button>
       </form>
-      <div className="success">Succesfully sent</div>
+      {
+        submited ? <div className="success">Succesfully sent</div> : null
+      }
     </div>
   );
 }

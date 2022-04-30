@@ -49,6 +49,14 @@
   margin: 3px;
   padding: 10px;
   border: none;
-  background-color: rgb(11, 169, 103);
+  opacity: 0.8;
   border-radius: 5px;
+  animation-name: success;
+  animation-duration: 5s;
+  background-color: green;
+}
+
+@keyframes success {
+  from {opacity: 0.9;}
+  to {opacity: 0.2;}
 }
