@@ -1,24 +1,25 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './Form.css';
 
 function Form() {
-  const [submited, setSubmited] = useState(false)
+  const [submited, setSubmited] = useState(false);
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    textarea: "",
-  })
+    firstName: '',
+    lastName: '',
+    email: '',
+    textarea: '',
+  });
 
   const inputHandle = (e) => {
     e.preventDefault();
-    setFormData(e.target.value)
-  }
+    setFormData(e.target.value);
+  };
 
   const isSubmited = (e) => {
-    e.preventDefault()
-    setSubmited(true)
-  }
+    e.preventDefault();
+    setSubmited(true);
+  };
+
   return (
     <div className="main">
       <form className="form" onSubmit={isSubmited}>

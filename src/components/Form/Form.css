@@ -57,6 +57,6 @@
 }
 
 @keyframes success {
-  from {opacity: 0.9;}
-  to {opacity: 0.2;}
+  from { opacity: 0.9; }
+  to { opacity: 0.2; }
 }
