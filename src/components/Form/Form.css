@@ -8,8 +8,7 @@
   flex-direction: column;
 }
 
-.form input,
-textarea {
+.form input {
   font-size: 20px;
   margin: 3px;
   padding: 10px;
@@ -34,8 +33,22 @@ textarea {
   margin: 3px;
   padding: 10px;
   border: none;
-  background-color: rgb(13, 39, 208);
+  background-color: rgb(11, 32, 169);
   border-radius: 5px;
   cursor: pointer;
   height: 55px;
+}
+
+.form-btn:hover {
+  background-color: rgb(56, 56, 236);
+}
+
+.success {
+  color: white;
+  font-size: 20px;
+  margin: 3px;
+  padding: 10px;
+  border: none;
+  background-color: rgb(11, 169, 103);
+  border-radius: 5px;
 }

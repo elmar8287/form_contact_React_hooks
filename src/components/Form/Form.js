@@ -11,6 +11,7 @@ function Form() {
         <textarea placeholder="Message" maxLength="50" />
         <button type="submit" className="form-btn">Send</button>
       </form>
+      <div className="success">Succesfully sent</div>
     </div>
   );
 }
